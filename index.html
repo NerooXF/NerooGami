@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NerooGami Linktree</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #ffffff, #a8d0ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      color: #003366;
+    }
+
+    .link-button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      background: #0077ff;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    .link-button:hover {
+      background: #0056cc;
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 119, 255, 0.4);
+    }
+
+    .copyright {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/hBDrNpD/profile-pic.jpg" alt="Profile" class="profile-img" />
+    <h1>NerooGami</h1>
+
+    <a href="https://wa.me/628xxxxxxxxxx" class="link-button">WhatsApp</a>
+    <a href="https://t.me/username" class="link-button">Telegram</a>
+    <a href="https://chat.whatsapp.com/abc123" class="link-button">Grup WhatsApp</a>
+    <a href="https://whatsapp.com/channel/xyz" class="link-button">Saluran WhatsApp</a>
+    <a href="https://t.me/groupname" class="link-button">Grup Telegram</a>
+    <a href="https://t.me/channelname" class="link-button">Saluran Telegram</a>
+    <a href="https://instagram.com/username" class="link-button">Instagram</a>
+    <a href="https://tiktok.com/@username" class="link-button">TikTok</a>
+    <a href="https://facebook.com/username" class="link-button">Facebook</a>
+    <a href="https://youtube.com/@username" class="link-button">YouTube</a>
+    <a href="https://chat.whatsapp.com/def456" class="link-button">WhatsApp Grup 2</a>
+    <a href="https://whatsapp.com/channel/abc2" class="link-button">WhatsApp Channel 2</a>
+
+    <div class="copyright">
+      &copy; 2025 NerooGami
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_eb7449d3e1.mp3" type="audio/mpeg">
+    Browsermu nggak mendukung audio otomatis 😢
+  </audio>
+
+  <script>
+    // Optional smooth fade-in
+    document.querySelectorAll('.link-button').forEach((btn, i) => {
+      btn.style.animation = `fadeIn 0.5s ease ${0.2 + i * 0.1}s forwards`;
+      btn.style.opacity = 0;
+    });
+  </script>
+</body>
+</html>
